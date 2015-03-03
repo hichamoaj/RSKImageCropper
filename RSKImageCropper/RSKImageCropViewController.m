@@ -607,7 +607,7 @@ static const CGFloat kLandscapeCancelAndChooseButtonsVerticalMargin = 12.0f;
         UIImage *croppedImage = [self croppedImage:self.originalImage cropRect:self.croppedRect];
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([self.delegate respondsToSelector:@selector(imageCropViewController:didCropImage:usingCropRect:)]) {
-                [self.delegate imageCropViewController:self didCropImage:croppedImage usingCropRect:cropRect];
+                [self.delegate imageCropViewController:self didCropImage:croppedImage usingCropRect:self.croppedRect];
             }
         });
     });
