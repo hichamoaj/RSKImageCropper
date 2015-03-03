@@ -75,6 +75,8 @@ typedef NS_ENUM(NSUInteger, RSKImageCropMode) {
 /// @name Accessing the Image
 ///--------------------------
 
+@property (nonatomic) CGRect croppedRect;
+
 /**
  The image for cropping.
  */
